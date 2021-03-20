@@ -1,0 +1,88 @@
+
+WindowManager:
+    FirstWindow:
+    SecondWindow:
+
+<FirstWindow>:
+
+    name: "first"
+    BoxLayout:
+
+        orientation: 'vertical'
+        size: root.width, root.height
+        padding: 10
+        spacing: 4
+
+
+        Label:
+            text: "Activity Recognition App"
+            font_size: 50
+            pos_hint: {'x':0, 'y':0}
+            background_color: (50/255,125/255,168/255,1)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle: 
+                    size: self.size
+                    pos: self.pos
+        
+        TextInput:
+            id: display_txt
+            text: ''
+            font_size: 20
+            multiline: False
+            size_hint: .7, .2
+            pos_hint: {'center_x':.5, 'center_y':.5}
+
+
+        FileChooserIconView:
+            id: select_file
+            on_selection: root.selected(select_file.selection)
+
+        BoxLayout:
+            size_hint: (1, .25)
+            Button:
+                text: 'Choose a video file!'
+                background_color: (50/255,168/255,82/255,1)
+                font_size: 30
+                size_hint: (.8, 1)
+
+                on_press: 
+                    app.root.current = "second"
+                    root.manager.transition.direction = "left"
+
+            Button:
+                text: 'Exit'
+                background_color: (1,0,0,1)
+                font_size: 30
+                size_hint: (.2,1)
+
+                on_release: exit(0)
+
+            
+
+<SecondWindow>:
+
+    name: "second"
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        Image:
+            id: vid
+            allow_stretch: True
+            keep_ratio: True
+            size_hint: 1, 0.6
+            pos_hint: {'center_x':0.5, 'center_y':0.5}
+
+        Button:
+            font_size: 30
+            text: "Go back!"
+            size_hint: (1, .25)
+            background_color: (201/255,145/255,12/255,1)
+
+            on_release: 
+                app.root.current = "first"
+                root.manager.transition.direction = "right"
+                root.stop_thread()
