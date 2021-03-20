@@ -1,9 +1,9 @@
 # action-recognition
 
-![img](https://github.com/computervisionpro/action-recognition/blob/main/activity-recognition.png)
+![img1](https://github.com/computervisionpro/action-recognition/blob/main/activity-recognition%20homepage.png)
 
 
-![img](https://github.com/computervisionpro/action-recognition/blob/main/activity-recognition.png)
+![img2](https://github.com/computervisionpro/action-recognition/blob/main/activity-recognition.png)
 
 
 ### Steps to run the program:
