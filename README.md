@@ -9,7 +9,8 @@
 ### Steps to run the program:
 
 1. cd to the directory of the program folder
-2. Open command prompt and run:- python kapp_activity_recog.py
+2. Download the tflite model and keep it in the same directory from [here](https://drive.google.com/file/d/1HVZAp7QSxF_5gSLR5zRKOP54q4mg1rU7/view?usp=sharing)
+3. Open command prompt and run:- python kapp_activity_recog.py
 
 
 
