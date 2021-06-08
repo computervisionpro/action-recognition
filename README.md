@@ -1,7 +1,6 @@
 # action-recognition
 
-![img1](https://github.com/computervisionpro/action-recognition/blob/main/activity-recognition%20homepage.png)
-
+[![Video_Demo](https://img.youtube.com/vi/2e0dKyALA-w/0.jpg)](https://www.youtube.com/watch?v=2e0dKyALA-w)
 
 ![img2](https://github.com/computervisionpro/action-recognition/blob/main/activity-recognition.png)
 
