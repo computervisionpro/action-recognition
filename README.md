@@ -1,4 +1,4 @@
-# action-recognition
+# Action recognition App
 
 Video demo
 
