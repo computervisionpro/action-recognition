@@ -4,7 +4,7 @@ Video demo
 
 [![Video_Demo](https://img.youtube.com/vi/2e0dKyALA-w/0.jpg)](https://www.youtube.com/watch?v=2e0dKyALA-w)
 
-![Output](https://github.com/computervisionpro/action-recognition/blob/main/activity-recognition.png =250x250)
+![img2](https://github.com/computervisionpro/action-recognition/blob/main/activity-recognition.png =250x250)
 
 
 ### Steps to run the program:
